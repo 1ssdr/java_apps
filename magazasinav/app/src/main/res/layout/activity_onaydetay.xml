@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ekle">
+
+    <EditText
+        android:id="@+id/isimText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="İSİM"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/soyisimText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/soyisimText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:hint="SOYİSİM"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/kullaniciAdiiText"
+        app:layout_constraintStart_toStartOf="@+id/isimText"
+        app:layout_constraintTop_toBottomOf="@+id/isimText" />
+
+    <EditText
+        android:id="@+id/kullaniciAdiiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="KULLANICI ADI"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintStart_toStartOf="@+id/soyisimText"
+        app:layout_constraintTop_toBottomOf="@+id/soyisimText" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="232dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="26dp"
+        android:onClick="ekle"
+        android:text="EKLE"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="227dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="153dp"
+        android:onClick="geri"
+        android:text="GERİ GİT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="213dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="116dp"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kullaniciAdiiText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

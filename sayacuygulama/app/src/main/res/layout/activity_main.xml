@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edittextmulti"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/suretext" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="425dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittextmulti">
+
+        <Button
+            android:id="@+id/buttonbasla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#EF930B"
+            android:onClick="basla"
+            android:text="BAŞLA"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColorHighlight="#E1DFDB"
+            android:textColorLink="#000000"
+            android:textDirection="firstStrong"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/buttontur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#EF930B"
+            android:onClick="tur"
+            android:text="TUR"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/buttondur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#EF930B"
+            android:onClick="dur"
+            android:text="DURDUR"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/buttonsifirla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#EF930B"
+            android:onClick="sifirla"
+            android:text="SIFIRLA"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/suretext"
+        android:layout_width="401dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="73dp"
+        android:text="SÜRE"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/edittextmulti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="414dp"
+        android:layout_height="374dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/krono" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
